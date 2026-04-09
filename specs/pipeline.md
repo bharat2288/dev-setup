@@ -25,7 +25,7 @@ Living backlog for the public starter-pack repo.
 
 | # | Item | Type | Status | Notes |
 |---|------|------|--------|-------|
-| 4 | **Expand the public skill set carefully** | Feature | Not started | Only add skills that travel well without private infrastructure |
+| 4 | **Expand the public skill set carefully** | Feature | In progress | Initial expansion adds `/variants` and `/pushback`; only add more if they travel well without private infrastructure |
 
 ## FUTURE PHASE
 

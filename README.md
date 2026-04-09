@@ -6,14 +6,26 @@ This repo ships the portable core of my local setup in the same shape it actuall
 
 It is intentionally not the full private system. There are no hooks, agents, MCP servers, sync scripts, or hidden databases here.
 
+## Related writing
+
+As of April 9, 2026, this repo packages the shareable core of the workflow described on [bhasuri.dev](https://www.bhasuri.dev), especially across these three essays:
+
+- [Two Files That Changed How I Build With AI](https://www.bhasuri.dev/p/two-files-that-changed-how-i-build)
+- [A Five-Part System for Building Real Stuff with AI](https://www.bhasuri.dev/p/a-five-part-system-for-building-real)
+- [Turning Routines Into Skills](https://www.bhasuri.dev/p/turning-routines-into-skills)
+
+What is here is the portable subset of that workflow: local specs, prompt macros, and a small public skill set.
+
 ## What is here
 
 - `CLAUDE.md` - the root instruction surface
 - `.claude/skills/start/` - session startup skill
 - `.claude/skills/end/` - session closeout skill
 - `.claude/skills/brainstorm/` - discovery and kickoff skill
+- `.claude/skills/variants/` - compare distinct approaches before committing
+- `.claude/skills/pushback/` - stress-test a plan before it hardens
 - `.claude/skills/brainstorm/references/kickoff-flow.md` - the guided kickoff reference
-- `_templates/` - local spec templates
+- `_templates/` - local spec templates, including `brief-template.md` as the rough output shape for `/brainstorm` before an idea hardens into full specs
 - `prompt-macros/` - a small macro library, one file per macro
 
 ## Mental model
@@ -22,7 +34,7 @@ The workflow progression is:
 
 1. `specs/` keep state across sessions.
 2. Prompt macros compress repeated reasoning moves.
-3. Skills turn repeated routines into named workflow behaviors.
+3. Skills turn repeated routines or decision patterns into named workflow behaviors.
 
 ## Suggested local shape
 
@@ -50,7 +62,9 @@ my-project/
    - `pipeline-template.md` -> `specs/pipeline.md`
    - `decisions-template.md` -> `specs/decisions.md`
 4. Use `/brainstorm` when the idea is still soft.
-5. Use `/start` at session start and `/end` at session end.
+5. Use `/variants` when you need real alternatives before choosing a direction.
+6. Use `/pushback` when a plan needs pressure before you commit to it.
+7. Use `/start` at session start and `/end` at session end.
 
 ## Design choices
 

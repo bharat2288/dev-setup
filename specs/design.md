@@ -20,7 +20,7 @@ Living description of what this repo is, what it includes, and how it should evo
 ## Current Scope
 
 - **Root instruction surface**: a trimmed `CLAUDE.md` that explains how the setup is meant to be used.
-- **Portable skill set**: public versions of `/start`, `/end`, and `/brainstorm`.
+- **Portable skill set**: public versions of `/start`, `/end`, `/brainstorm`, `/variants`, and `/pushback`.
 - **Kickoff reference**: the guided kickoff flow stored where it actually belongs under `.claude/skills/brainstorm/references/`.
 - **Local spec templates**: starter markdown templates for `design`, `status`, `pipeline`, `decisions`, `brief`, and `CLAUDE.md`.
 - **Starter macro set**: a small macro library split into separate markdown files.
@@ -40,13 +40,15 @@ prompt-macros/ -> reusable reasoning cues
 - `.claude/skills/start/SKILL.md` - session startup behavior
 - `.claude/skills/end/SKILL.md` - session closeout behavior
 - `.claude/skills/brainstorm/SKILL.md` - discovery and kickoff behavior
+- `.claude/skills/variants/SKILL.md` - option comparison behavior
+- `.claude/skills/pushback/SKILL.md` - critical challenge behavior
 - `_templates/` - starter templates for local project state
 - `prompt-macros/` - split macro docs
 
 **Data flow**
 - A user clones the repo and copies the setup into a working environment.
 - Local `specs/` files carry project continuity across sessions.
-- Skills define reusable workflows that operate on those visible files.
+- Skills define reusable workflows and critical-thinking routines that operate on those visible files.
 - Macros capture recurring reasoning moves that may later become skills.
 
 ## Constraints

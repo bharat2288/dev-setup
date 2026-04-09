@@ -36,3 +36,12 @@ Append-only record of non-obvious choices for the public starter-pack repo.
 **Choice:** Split the public macro set into one file per macro.
 **Tradeoffs:** More files, but cleaner reuse and easier selective expansion later.
 **Affects:** `prompt-macros/`
+
+### Add only portable reasoning skills
+
+**Date:** 2026-04-09
+**Context:** The public starter pack already mentioned `variants` and `pushback` in the surrounding post framing, but the repo only shipped them as macros.
+**Options:** Keep the public repo limited to `/start`, `/end`, and `/brainstorm`; add `variants` and `pushback`; or expose a much larger skill bundle.
+**Choice:** Add cleaned public versions of `/variants` and `/pushback`, but stop short of heavier skills that depend on private infrastructure or repo-specific context.
+**Tradeoffs:** The starter pack becomes more complete and better aligned with Post F, but the public surface area grows slightly.
+**Affects:** `.claude/skills/`, `README.md`, public skill-set framing
